@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <a href="play.html" class="play-btn" title="Play Sudoku">
+        <span class="play-icon"></span>
+    </a>
+    <div class="container">
+        <h1>Sudoku Solver</h1>
+        <form id="sudoku-form">
+            <div class="grid" id="sudoku-grid">
+                <!-- Dynamically generate 81 input fields for the Sudoku grid -->
+            </div>
+            <button type="submit">Solve</button>
+            <button type="button" id="reset-button">Reset</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="play-levels.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="play-container" style="max-width:900px;">
+    <a href="main-solver.html" id="return-main-btn" style="position:absolute;top:18px;right:28px; text-decoration:none; background:#eee; color:#007bff; padding:10px 22px; border-radius:6px; font-weight:600;">Sudoku Solver from Scratch</a>
+        <div class="play-header" style="flex-direction:column;align-items:center;gap:0;">
+            <h1 style="margin-bottom:10px;">Play Sudoku</h1>
+            <div class="timer-level" style="margin-bottom:10px;">
+                <div class="level-name" id="level-name">Easy</div>
+                <div class="timer" id="timer">00:00</div>
+            </div>
+        </div>
+    <div style="display:flex; justify-content:center; gap:48px; flex-wrap:nowrap; align-items:flex-start; min-width:800px;">
+            <div>
+                <div style="font-weight:600; margin-bottom:6px;">Your Sudoku</div>
+                <div class="grid" id="play-sudoku-grid"></div>
+            </div>
+            <div id="solution-container" style="display:none; flex-direction:column; align-items:center; min-width:370px;">
+                <div style="font-weight:600; margin-bottom:6px;">Solution</div>
+                <div class="grid" id="solution-sudoku-grid"></div>
+            </div>
+        </div>
+    <div class="play-actions" style="margin-bottom:0; flex-direction:column; align-items:center;">
+        <div style="display:flex; gap:18px; justify-content:center;">
+            <button id="verify-btn">Verify</button>
+            <button id="give-solution-btn">Give Solution</button>
+            <button id="solve-btn">Solve</button>
+        </div>
+        <div id="play-result"></div>
+        <div style="display:flex;justify-content:center;margin-top:18px;position:relative;">
+            <button id="new-game" class="newgame-btn" style="margin:0 auto;">New Game</button>
+            <!-- The level menu will appear just right to this button -->
+        </div>
+    </div>
+    </div>
+    <script src="play.js"></script>
+    <script src="play-newgame.js"></script>
+</body>
+</html>
