@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Send grid data to backend
-        fetch('/solve', {
+        fetch('/api/solve', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
